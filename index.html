@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dao Duc Manh | International Business & Global Logistics Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="theme-neon-cyber">
+  <!-- Background Interactive Mesh & Glow Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar glass">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-badge">DM</span>
+        <span class="logo-text">Dao Duc Manh<span class="dot">.</span></span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link"><i data-lucide="user"></i> About</a>
+        <a href="#experience" class="nav-link"><i data-lucide="briefcase"></i> Experience</a>
+        <a href="#skills" class="nav-link"><i data-lucide="cpu"></i> Skills & Systems</a>
+        <a href="#workflow" class="nav-link"><i data-lucide="git-branch"></i> Workflow</a>
+        <a href="#education" class="nav-link"><i data-lucide="graduation-cap"></i> Education</a>
+        <a href="#contact" class="nav-link btn-nav-cta"><i data-lucide="send"></i> Let's Connect</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" title="Toggle vibrant glow palette" aria-label="Toggle Glow">
+          <i data-lucide="palette"></i>
+        </button>
+        <button id="mobile-toggle" class="icon-btn mobile-menu-btn" aria-label="Toggle Navigation">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-pill glass">
+            <span class="pulsing-dot"></span>
+            <span>Available for Full-time & Logistics / CS Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text gradient-glow">Dao Duc Manh</span>
+            <br>
+            <span class="typing-container">
+              <span class="typing-prefix">Driven to optimize </span>
+              <span id="typing-text" class="typing-text">Global Supply Chains</span>
+              <span class="typing-cursor">|</span>
+            </span>
+          </h1>
+
+          <p class="hero-description">
+            Final-year <strong>International Business Economics</strong> student at <strong>Foreign Trade University (FTU HCMC)</strong> with hands-on expertise in <strong>Logistics Operations</strong>, <strong>SAP ERP & WMS</strong>, import/export documentation, and cross-functional team coordination.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">
+              <i data-lucide="mail"></i> Get In Touch
+            </a>
+            <a href="#experience" class="btn btn-glass">
+              <i data-lucide="compass"></i> Explore Operations
+            </a>
+            <a href="mailto:manhdd.h.2023@gmail.com" class="btn btn-outline" id="quick-email-btn">
+              <i data-lucide="file-down"></i> Quick Email
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-metrics glass-card">
+            <div class="metric-item">
+              <div class="metric-num-wrap">
+                <span class="metric-number" data-target="3.43">0</span><span class="metric-suffix">/4.0</span>
+              </div>
+              <span class="metric-label">GPA (FTU HCMC)</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-num-wrap">
+                <span class="metric-number" data-target="7.0">0</span>
+              </div>
+              <span class="metric-label">IELTS Academic</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-num-wrap">
+                <span class="metric-number" data-target="6">0</span><span class="metric-suffix">+</span>
+              </div>
+              <span class="metric-label">Cross-functional Teams</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-num-wrap">
+                <span class="metric-number" data-target="100">0</span><span class="metric-suffix">%</span>
+              </div>
+              <span class="metric-label">Documentation Precision</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / 3D Card Showcase -->
+        <div class="hero-visual">
+          <div class="tilt-card-container">
+            <div class="profile-card glass-card" id="profile-card">
+              <div class="card-glow-overlay"></div>
+              <div class="card-top-bar">
+                <div class="traffic-lights">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="card-chip"><i data-lucide="shield-check"></i> Verified Profile</div>
+              </div>
+
+              <div class="avatar-wrapper">
+                <div class="avatar-ring"></div>
+                <div class="avatar-inner">
+                  <img src="avatar.jpg" alt="Dao Duc Manh" class="avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <div class="avatar-initials" style="display: none;">DM</div>
+                </div>
+                <div class="floating-badge badge-top-right">
+                  <i data-lucide="globe"></i> FTU HCMC
+                </div>
+                <div class="floating-badge badge-bottom-left">
+                  <i data-lucide="database"></i> SAP & WMS
+                </div>
+              </div>
+
+              <div class="profile-info">
+                <h3 class="profile-name">Dao Duc Manh</h3>
+                <p class="profile-role">Supply Chain & Operations Specialist</p>
+                <div class="profile-location">
+                  <i data-lucide="map-pin"></i> Ho Chi Minh City, Vietnam
+                </div>
+              </div>
+
+              <!-- Interactive Live Radar / Skill Radar Preview -->
+              <div class="status-feed">
+                <div class="feed-item">
+                  <div class="feed-icon"><i data-lucide="package-check"></i></div>
+                  <div class="feed-text">
+                    <span class="feed-title">Order Fulfillment & WMS</span>
+                    <span class="feed-sub">Daily operational execution & tracking</span>
+                  </div>
+                  <span class="feed-tag live-badge">Active</span>
+                </div>
+                <div class="feed-item">
+                  <div class="feed-icon"><i data-lucide="file-spreadsheet"></i></div>
+                  <div class="feed-text">
+                    <span class="feed-title">SAP ERP & BOM Records</span>
+                    <span class="feed-sub">Multi-department sync & version control</span>
+                  </div>
+                  <span class="feed-tag">Verified</span>
+                </div>
+                <div class="feed-item">
+                  <div class="feed-icon"><i data-lucide="headphones"></i></div>
+                  <div class="feed-text">
+                    <span class="feed-title">Customer Service & Import/Export</span>
+                    <span class="feed-sub">Bill of Lading, payment & dispatch</span>
+                  </div>
+                  <span class="feed-tag">Ready</span>
+                </div>
+              </div>
+
+              <div class="card-footer-action">
+                <a href="#contact" class="btn btn-accent-glow w-100">
+                  <i data-lucide="sparkles"></i> Connect With Manh
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & SUMMARY SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i data-lucide="user-check"></i> Executive Profile</span>
+          <h2 class="section-title">Bridging Data, Operations & <span class="gradient-text">Customer Excellence</span></h2>
+          <p class="section-subtitle">Dedicated to transforming complex logistical bottlenecks into streamlined, accurate, and customer-centric workflows.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card highlight-border">
+            <div class="card-icon-box"><i data-lucide="target"></i></div>
+            <h3>Core Mission</h3>
+            <p>
+              Equipped with a solid foundation in International Business Economics at <strong>Foreign Trade University</strong>, I combine rigorous theoretical understanding of trade procedures with boots-on-the-ground experience in warehouse operations and cross-departmental coordination.
+            </p>
+            <div class="pill-row">
+              <span class="tech-pill">Import / Export</span>
+              <span class="tech-pill">E-Commerce Logistics</span>
+              <span class="tech-pill">Customer Support</span>
+              <span class="tech-pill">Supply Chain Systems</span>
+            </div>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="card-icon-box"><i data-lucide="check-circle-2"></i></div>
+            <h3>What I Bring to Your Team</h3>
+            <ul class="benefit-list">
+              <li>
+                <i data-lucide="chevron-right" class="bullet-icon"></i>
+                <div>
+                  <strong>End-to-End Shipment Mastery:</strong> Proficient in processing Bill of Lading (B/L), payment verification, shipping records, and customs procedures with zero document ambiguity.
+                </div>
+              </li>
+              <li>
+                <i data-lucide="chevron-right" class="bullet-icon"></i>
+                <div>
+                  <strong>ERP & Warehouse Tech Savvy:</strong> Proficient in SAP ERP and Warehouse Management Systems (WMS) for status monitoring, inventory traceability, and BOM management.
+                </div>
+              </li>
+              <li>
+                <i data-lucide="chevron-right" class="bullet-icon"></i>
+                <div>
+                  <strong>Proactive Customer & Problem Solving:</strong> Swift coordination with transportation, warehouse staff, and clients to troubleshoot delivery delays and maintain high SLA fulfillment.
+                </div>
+              </li>
+              <li>
+                <i data-lucide="chevron-right" class="bullet-icon"></i>
+                <div>
+                  <strong>Bilingual Communication:</strong> Vietnamese native with <strong>IELTS 7.0</strong> for seamless collaboration across global supply chain networks and foreign partners.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE ROADMAP -->
+    <section id="experience" class="section bg-dim">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i data-lucide="briefcase"></i> Track Record</span>
+          <h2 class="section-title">Hands-On Operational <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">Practical industry exposure across warehouse logistics and enterprise product development.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1: MerakiFW -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot pulse"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <div class="company-badge-wrap">
+                  <div class="company-logo-placeholder">M</div>
+                  <div>
+                    <h3 class="role-title">Product Development (PD) Assistant</h3>
+                    <h4 class="company-name">MerakiFW Co., Ltd.</h4>
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="meta-badge date-badge"><i data-lucide="calendar"></i> 05/2026 – 07/2026</span>
+                  <span class="meta-badge loc-badge"><i data-lucide="map-pin"></i> Binh Duong, Vietnam</span>
+                </div>
+              </div>
+
+              <div class="timeline-body">
+                <ul class="achievement-bullets">
+                  <li>
+                    <i data-lucide="check" class="icon-check"></i>
+                    <span><strong>SAP ERP Data Management:</strong> Leveraged SAP ERP to input, maintain, and audit product development master data, ensuring total documentation accuracy across development lifecycles.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check" class="icon-check"></i>
+                    <span><strong>Cross-Functional Orchestration:</strong> Coordinated with <strong>6+ specialized teams</strong> (Merchandising, Planning, Production, QA, Logistics, and external suppliers) to prevent timeline slippages.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check" class="icon-check"></i>
+                    <span><strong>Sample Lifecycle & Action Tracking:</strong> Monitored sample prototypes, resolved action-item bottlenecks, and preserved continuous alignment between internal departments and factory partners.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check" class="icon-check"></i>
+                    <span><strong>BOM & Technical Document Control:</strong> Administered Bills of Materials (BOMs), specifications, and version histories to maintain rigorous audit trails.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check" class="icon-check"></i>
+                    <span><strong>Executive Excel Reporting:</strong> Built Excel-based visual progress reports that empowered management with transparent manufacturing timelines.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="timeline-tags">
+                <span class="tag-pill"><i data-lucide="database"></i> SAP ERP</span>
+                <span class="tag-pill"><i data-lucide="file-text"></i> Bill of Materials (BOM)</span>
+                <span class="tag-pill"><i data-lucide="users"></i> 6+ Cross-Functional Teams</span>
+                <span class="tag-pill"><i data-lucide="bar-chart-2"></i> Advanced Excel</span>
+                <span class="tag-pill"><i data-lucide="shield"></i> Quality Assurance Sync</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Flexichain -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <div class="company-badge-wrap">
+                  <div class="company-logo-placeholder accent-2">F</div>
+                  <div>
+                    <h3 class="role-title">Warehouse Operation Intern</h3>
+                    <h4 class="company-name">Flexichain Solution and Technology</h4>
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="meta-badge date-badge"><i data-lucide="calendar"></i> 06/2025 – 08/2025</span>
+                  <span class="meta-badge loc-badge"><i data-lucide="map-pin"></i> Binh Duong, Vietnam</span>
+                </div>
+              </div>
+
+              <div class="timeline-body">
+                <ul class="achievement-bullets">
+                  <li>
+                    <i data-lucide="check" class="icon-check"></i>
+                    <span><strong>End-to-End Fulfillment:</strong> Managed complete order lifecycles for daily e-commerce dispatches, guaranteeing punctual delivery execution and real-time WMS system updates.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check" class="icon-check"></i>
+                    <span><strong>Multi-Team Delivery Resolution:</strong> Partnered closely with warehousing crews, freight drivers, and customer service reps to preempt shipping delays and preserve continuous flow.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check" class="icon-check"></i>
+                    <span><strong>Shipping Documentation & Audits:</strong> Verified shipping waybills, dispatch notes, and inbound/outbound records for strict data integrity and reporting accuracy.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check" class="icon-check"></i>
+                    <span><strong>Proactive Delay Intervention:</strong> Spearheaded delivery tracking protocols to immediately follow up on delayed parcels and safeguard on-time fulfillment metrics.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="timeline-tags">
+                <span class="tag-pill"><i data-lucide="layers"></i> WMS Systems</span>
+                <span class="tag-pill"><i data-lucide="truck"></i> Logistics & Transportation</span>
+                <span class="tag-pill"><i data-lucide="shopping-cart"></i> E-Commerce Fulfillment</span>
+                <span class="tag-pill"><i data-lucide="file-check"></i> Shipment Audit</span>
+                <span class="tag-pill"><i data-lucide="phone-call"></i> Case Tracking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE WORKFLOW / SIMULATION VISUALIZER -->
+    <section id="workflow" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i data-lucide="workflow"></i> Interactive Process</span>
+          <h2 class="section-title">The End-to-End <span class="gradient-text">Logistics Pipeline</span></h2>
+          <p class="section-subtitle">Click through the interactive workflow stages to explore how I navigate shipments from inquiry to successful delivery.</p>
+        </div>
+
+        <div class="workflow-interactive-box glass-card">
+          <!-- Step Nav -->
+          <div class="workflow-steps" id="workflow-tabs">
+            <button class="step-btn active" data-step="1">
+              <span class="step-num">01</span>
+              <span class="step-label">Order & Inquiry</span>
+            </button>
+            <button class="step-btn" data-step="2">
+              <span class="step-num">02</span>
+              <span class="step-label">System Sync (WMS/SAP)</span>
+            </button>
+            <button class="step-btn" data-step="3">
+              <span class="step-num">03</span>
+              <span class="step-label">Import / Export Docs</span>
+            </button>
+            <button class="step-btn" data-step="4">
+              <span class="step-num">04</span>
+              <span class="step-label">Dispatch & Transit</span>
+            </button>
+            <button class="step-btn" data-step="5">
+              <span class="step-num">05</span>
+              <span class="step-label">Customer Resolution</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Display Card -->
+          <div class="workflow-display-panel" id="workflow-panel">
+            <div class="workflow-left">
+              <div class="stage-tag" id="stage-tag">Stage 01 of 05</div>
+              <h3 class="stage-title" id="stage-title">Customer Inquiry & Order Intake</h3>
+              <p class="stage-desc" id="stage-desc">
+                Reviewing client requirements, confirming item specifications against inventory or BOM master lists, and establishing priority shipping windows to guarantee customer satisfaction from minute one.
+              </p>
+              <div class="stage-highlights">
+                <h4><i data-lucide="check-circle"></i> Key Competencies in Action:</h4>
+                <ul id="stage-bullets">
+                  <li>Rapid customer inquiry triage & communication</li>
+                  <li>Order verification against supply limitations</li>
+                  <li>Payment checking & initial clearance</li>
+                </ul>
+              </div>
+            </div>
+            <div class="workflow-right">
+              <div class="visual-mockup-screen">
+                <div class="mockup-header">
+                  <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                  <span class="mockup-title" id="mockup-header-title">Console :: Order_Intake.sys</span>
+                </div>
+                <div class="mockup-body" id="mockup-body">
+                  <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">init_order_stream</span> --channel=ecommerce</div>
+                  <div class="terminal-line t-cyan">[OK] Received customer inquiry #VN-88291</div>
+                  <div class="terminal-line t-yellow">[VERIFIED] Bill of Lading & Payment Receipt attached</div>
+                  <div class="terminal-line t-green">> Routing to WMS Warehouse Fulfillment Buffer...</div>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar-fill" style="width: 25%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & TECHNICAL STACK -->
+    <section id="skills" class="section bg-dim">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i data-lucide="cpu"></i> Toolkit & Competencies</span>
+          <h2 class="section-title">Specialized <span class="gradient-text">Skill Matrix</span></h2>
+          <p class="section-subtitle">Bridging logistics software, international trade compliance, advanced spreadsheet analytics, and client care.</p>
+        </div>
+
+        <!-- Filter tabs for skills -->
+        <div class="filter-pills" id="skill-filters">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="systems">Systems & Tech</button>
+          <button class="filter-btn" data-filter="trade">Import/Export & Trade</button>
+          <button class="filter-btn" data-filter="cs">Customer Care</button>
+          <button class="filter-btn" data-filter="analytics">Data & Excel</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Card: SAP ERP -->
+          <div class="skill-card glass-card" data-category="systems">
+            <div class="skill-card-top">
+              <div class="skill-icon-box gradient-1"><i data-lucide="server"></i></div>
+              <div class="skill-level-badge">Proficient</div>
+            </div>
+            <h4>SAP ERP</h4>
+            <p>Product development data maintenance, sample milestone monitoring, BOM management, status integrity across planning & manufacturing.</p>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" style="width: 90%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>BOMs</span><span>Traceability</span><span>Master Data</span>
+            </div>
+          </div>
+
+          <!-- Card: WMS -->
+          <div class="skill-card glass-card" data-category="systems">
+            <div class="skill-card-top">
+              <div class="skill-icon-box gradient-2"><i data-lucide="package"></i></div>
+              <div class="skill-level-badge">Proficient</div>
+            </div>
+            <h4>Warehouse Management System (WMS)</h4>
+            <p>Order fulfillment tracking, inbound/outbound status updates, inventory logging, and dispatch coordination.</p>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" style="width: 88%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>E-commerce Fulfillment</span><span>Dispatch</span><span>Inventory Log</span>
+            </div>
+          </div>
+
+          <!-- Card: Microsoft Excel -->
+          <div class="skill-card glass-card" data-category="analytics">
+            <div class="skill-card-top">
+              <div class="skill-icon-box gradient-3"><i data-lucide="table"></i></div>
+              <div class="skill-level-badge">Advanced</div>
+            </div>
+            <h4>Advanced Microsoft Excel</h4>
+            <p>PivotTables, XLOOKUP / VLOOKUP, data validation, conditional formatting, dashboard reporting, and logistics operational metrics.</p>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" style="width: 92%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>XLOOKUP</span><span>PivotTables</span><span>Reporting</span>
+            </div>
+          </div>
+
+          <!-- Card: Import / Export Documentation -->
+          <div class="skill-card glass-card" data-category="trade">
+            <div class="skill-card-top">
+              <div class="skill-icon-box gradient-4"><i data-lucide="file-check-2"></i></div>
+              <div class="skill-level-badge">Expert Theory & Practical</div>
+            </div>
+            <h4>Import - Export Documentation</h4>
+            <p>In-depth understanding of Bill of Lading (B/L), customs clearance documents, packing lists, commercial invoices, and cargo insurance.</p>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" style="width: 94%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Bill of Lading</span><span>Payment Checking</span><span>Customs</span>
+            </div>
+          </div>
+
+          <!-- Card: Customer Service & Case Resolution -->
+          <div class="skill-card glass-card" data-category="cs">
+            <div class="skill-card-top">
+              <div class="skill-icon-box gradient-1"><i data-lucide="headphones"></i></div>
+              <div class="skill-level-badge">Skilled</div>
+            </div>
+            <h4>Customer Service & Case Tracking</h4>
+            <p>Client inquiry handling, shipment follow-ups, resolving delayed deliveries, and empathetic, solution-first communication.</p>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" style="width: 90%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Case Tracking</span><span>Delay Follow-up</span><span>Client Satisfaction</span>
+            </div>
+          </div>
+
+          <!-- Card: Cross-functional Collaboration -->
+          <div class="skill-card glass-card" data-category="cs">
+            <div class="skill-card-top">
+              <div class="skill-icon-box gradient-2"><i data-lucide="users-2"></i></div>
+              <div class="skill-level-badge">Proven</div>
+            </div>
+            <h4>Cross-Functional Coordination</h4>
+            <p>Bridging Logistics, Planning, Production, QA, Merchandising, and suppliers to eliminate bottlenecks and meet tight deadlines.</p>
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" style="width: 95%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>6+ Departments</span><span>Stakeholder Sync</span><span>Escalation Control</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Excel Formula & Data Simulator Widget -->
+        <div class="excel-sim-wrapper glass-card">
+          <div class="sim-header">
+            <div class="sim-title">
+              <i data-lucide="file-spreadsheet"></i>
+              <span>Live Excel & Logistics Data Playground</span>
+            </div>
+            <span class="sim-badge">Interactive Demo</span>
+          </div>
+          <p class="sim-description">
+            Experience how I handle shipment data validation, automated lookups, and delivery delay flagging in real time:
+          </p>
+
+          <div class="sim-table-wrap">
+            <table class="sim-table">
+              <thead>
+                <tr>
+                  <th>Shipment ID</th>
+                  <th>Destination Hub</th>
+                  <th>Target ETA</th>
+                  <th>Status in WMS</th>
+                  <th>Action Triggered</th>
+                </tr>
+              </thead>
+              <tbody id="sim-tbody">
+                <tr>
+                  <td><code>#EXP-2026-091</code></td>
+                  <td>Tan Son Nhat (SGN) Hub</td>
+                  <td>Today, 14:00</td>
+                  <td><span class="status-chip success">Cleared</span></td>
+                  <td>Dispatched to Freight</td>
+                </tr>
+                <tr>
+                  <td><code>#EXP-2026-094</code></td>
+                  <td>Binh Duong ICD</td>
+                  <td>Today, 10:30</td>
+                  <td><span class="status-chip warning">Pending B/L</span></td>
+                  <td>Follow-up with Shipping Line</td>
+                </tr>
+                <tr>
+                  <td><code>#EXP-2026-099</code></td>
+                  <td>Cat Lai Port Terminal</td>
+                  <td>Tomorrow, 08:00</td>
+                  <td><span class="status-chip info">Documentation OK</span></td>
+                  <td>Pre-customs Declaration</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="sim-control-bar">
+            <button id="add-shipment-btn" class="btn btn-sm btn-primary">
+              <i data-lucide="plus"></i> Simulate New Shipment
+            </button>
+            <button id="reset-shipment-btn" class="btn btn-sm btn-glass">
+              <i data-lucide="rotate-ccw"></i> Reset Records
+            </button>
+            <span class="sim-status-text" id="sim-feedback">3 live shipments tracked in memory.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i data-lucide="graduation-cap"></i> Academic Background</span>
+          <h2 class="section-title">Education & <span class="gradient-text">International Trade</span></h2>
+          <p class="section-subtitle">Top-tier academic foundation from Vietnam's premier foreign trade institution.</p>
+        </div>
+
+        <div class="edu-layout">
+          <!-- Main University Card -->
+          <div class="edu-card glass-card">
+            <div class="edu-head">
+              <div class="edu-institution-box">
+                <i data-lucide="landmark"></i>
+              </div>
+              <div class="edu-details">
+                <span class="edu-years">2023 – 2027</span>
+                <h3 class="edu-degree">Bachelor in International Business Economics</h3>
+                <h4 class="edu-school">Foreign Trade University (FTU HCMC)</h4>
+              </div>
+              <div class="gpa-pill">
+                <span class="gpa-title">GPA</span>
+                <span class="gpa-val">3.43 / 4.0</span>
+              </div>
+            </div>
+
+            <div class="edu-body">
+              <h5 class="coursework-heading"><i data-lucide="book-open"></i> Relevant Advanced Coursework:</h5>
+              <div class="coursework-grid">
+                <div class="course-chip">
+                  <i data-lucide="arrow-right-left"></i>
+                  <div>
+                    <strong>International Trade Transactions</strong>
+                    <span>Contracts, Incoterms 2020 & Trade Customs</span>
+                  </div>
+                </div>
+                <div class="course-chip">
+                  <i data-lucide="network"></i>
+                  <div>
+                    <strong>Supply Chain Management</strong>
+                    <span>Network Design, Demand Forecasting & Logistics</span>
+                  </div>
+                </div>
+                <div class="course-chip">
+                  <i data-lucide="container"></i>
+                  <div>
+                    <strong>Logistics Management</strong>
+                    <span>Freight Forwarding, Port Operations & Warehousing</span>
+                  </div>
+                </div>
+                <div class="course-chip">
+                  <i data-lucide="credit-card"></i>
+                  <div>
+                    <strong>International Payment</strong>
+                    <span>L/C, T/T, D/P, D/A & Risk Mitigation</span>
+                  </div>
+                </div>
+                <div class="course-chip">
+                  <i data-lucide="shield-alert"></i>
+                  <div>
+                    <strong>Cargo Insurance</strong>
+                    <span>Marine Insurance Clauses (ICC A/B/C) & Claims</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Language & Global Readiness Box -->
+          <div class="lang-card glass-card">
+            <h3><i data-lucide="languages"></i> Languages & Global Readiness</h3>
+            
+            <div class="lang-item">
+              <div class="lang-top">
+                <span class="lang-name">English</span>
+                <span class="lang-score-badge">IELTS 7.0</span>
+              </div>
+              <p class="lang-desc">Professional Working Proficiency. Capable of drafting complex international contracts, negotiating with foreign freight forwarders, and handling international customer inquiries with ease.</p>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <div class="lang-item">
+              <div class="lang-top">
+                <span class="lang-name">Vietnamese</span>
+                <span class="lang-score-badge">Native</span>
+              </div>
+              <p class="lang-desc">Native fluency. Excellent written communication for domestic operational coordination with warehouse teams, customs officers, and suppliers.</p>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" style="width: 100%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & CALL TO ACTION -->
+    <section id="contact" class="section bg-dim">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i data-lucide="send"></i> Let's Collaborate</span>
+          <h2 class="section-title">Ready to Elevate Your <span class="gradient-text">Operations?</span></h2>
+          <p class="section-subtitle">I'm currently eager to support Customer Service, Logistics Operations, and Import/Export teams. Let's discuss how I can contribute!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Details -->
+          <div class="contact-details glass-card">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out directly by email or phone. I respond promptly within 24 hours.</p>
+
+            <div class="contact-cards-list">
+              <div class="contact-info-row">
+                <div class="c-icon"><i data-lucide="mail"></i></div>
+                <div class="c-info">
+                  <span class="c-label">Email</span>
+                  <a href="mailto:manhdd.h.2023@gmail.com" class="c-value">manhdd.h.2023@gmail.com</a>
+                </div>
+                <button class="copy-btn icon-btn" data-copy="manhdd.h.2023@gmail.com" title="Copy email">
+                  <i data-lucide="copy"></i>
+                </button>
+              </div>
+
+              <div class="contact-info-row">
+                <div class="c-icon"><i data-lucide="phone"></i></div>
+                <div class="c-info">
+                  <span class="c-label">Phone</span>
+                  <a href="tel:0369994207" class="c-value">0369994207</a>
+                </div>
+                <button class="copy-btn icon-btn" data-copy="0369994207" title="Copy phone number">
+                  <i data-lucide="copy"></i>
+                </button>
+              </div>
+
+              <div class="contact-info-row">
+                <div class="c-icon"><i data-lucide="map-pin"></i></div>
+                <div class="c-info">
+                  <span class="c-label">Location</span>
+                  <span class="c-value">Ho Chi Minh City, Vietnam</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="quick-status-box">
+              <div class="q-icon"><i data-lucide="briefcase"></i></div>
+              <div class="q-text">
+                <strong>Target Position:</strong>
+                <p>Customer Service Logistics • Logistics Operations Specialist • Import-Export Executive</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Direct Message Composer -->
+          <div class="contact-form-card glass-card">
+            <h3>Send a Direct Message</h3>
+            <form id="contact-form" onsubmit="event.preventDefault(); handleContactSubmit();">
+              <div class="form-group">
+                <label for="sender-name">Your Name / Organization</label>
+                <input type="text" id="sender-name" class="form-input" placeholder="e.g. Recruiters / Logistics Manager" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email">Your Email Address</label>
+                <input type="email" id="sender-email" class="form-input" placeholder="e.g. contact@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message">Message or Job Opportunity</label>
+                <textarea id="sender-message" class="form-textarea" rows="4" placeholder="Hi Manh, we came across your profile and would like to discuss an opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100" id="send-msg-btn">
+                <i data-lucide="send"></i> Dispatch Message
+              </button>
+              <div id="form-feedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">Dao Duc Manh</span>
+        <p>Built with modern web standards, interactive visualizations & passion for global logistics.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top btn-glass"><i data-lucide="arrow-up"></i> Back to Top</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Dao Duc Manh. Foreign Trade University HCMC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
